@@ -1,4 +1,4 @@
-# Optimization of Single Image Super Resolution based on Deep Learning
+# Application of Deep Learning models in Single Image Super Resolution
 Contributor: Xiuyu Liu; Qingqing Cao
 ## Description
 Single image super-resolution (SISR), which aims to reconstruct a high-resolution (HR) image from a low-resolution (LR) observation, has been an active research topic in the area of image processing in recent decades.  Traditional methods improving image’s resolution include interpolation-based and construction based methods. In the near few years, people used learning-based methods to map low-resolution images to high-resolution images. In this project, we start from basic convolution neural networks (SRCNN) and experiment with different upsampling methods, architectures, and loss functions. Finally, we combined traditional signal processing methods with neural networks to improve images’ resolution.
