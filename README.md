@@ -77,11 +77,12 @@ The image below shows the results of applying the edge-enhancement filter to the
 The image below shows the results of applying the edge-enhancement filter to the output of the neural network (post-processing). It is very obvious that the edge-enhancement filter exaggerates the high-frequency components and the details of the image are improved. However, it is necessary to find a balance between enhancing high-frequency components and inducing unwanted artifacts.
 <img src="images/Picture12.png" alt="drawing" width="600"/>
 
-## Conclusions
-This project aims to have an understanding of single image resolution using deep learning.  First, we implement the SRCNN model from scratch and use it as a baseline deep learning model. Second, we experiment with different up-sampling methods, deep learning architectures and loss functions. We evaluate the influence of these aspects and try to find a way to improve the performance of the baseline SRCNN model. Third, we apply a traditional edge enhancement filter on the upsampled low-resolution images and output super-resolution images, as pre-processing and post-processing respectively, and evaluate their influence. Here are some conclusions:
-The baseline SRCNN results show that we can get rid of some blurry but it seems to be a smoothed image (lacking high-frequency details) compared with the HR image. This indicates the baseline SRCNN can be potentially improved if we focus on high-frequency restoration.
-Regarding the ability of getting a small loss, it can be clearly concluded from Figure 7 that pre-upsampling > progressive upsampling > iterative upsampling > post upsampling.The residual architecture and inception architecture are better with respect to convergence speed and resultant loss. The visual inspection confirms the advantage of using the perceptual loss in super-resolution problems. 
-Applying the edge-enhancement filter on the pre-processing stage does not make an improvement on the super resolution image. Applying the filter on the post-processing stage can highly enhance the high-frequency part of the image, however, it is necessary to find a balance between enhancing edge and not inducing unwanted artifacts.
 
+## Contribution
+Covid Now app is a free and open source project developed by Xiuyu Liu (xiuyul2@illinois.edu) and Qingqing Cao (qc13@illinois.edu). Any contributions are welcome. Here are a few ways you can help:
+* Report bugs and make suggestions.
+* Write some code. Please follow the code style used in the project to make a review process faster.
+ 
 
-
+## License
+This application is released under MIT. Some of the used libraries are released under different licenses.
